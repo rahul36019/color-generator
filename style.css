@@ -59,3 +59,36 @@ html, body {
 .copy p {
   margin: 0; /* Remove default margin from paragraph */
 }
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .container {
+    width: 70%;
+  }
+
+  .btn {
+    width: auto;
+    flex-grow: 1; /* Make buttons expand to fit the container */
+    padding: 10px;
+  }
+
+  .btn_contai {
+    flex-direction: column; /* Stack buttons vertically on smaller screens */
+    align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: 90%;
+  }
+
+  .btn {
+    width: 100%;
+    margin: 5px 0; /* Adjust margin for vertically stacked buttons */
+  }
+
+  .copy {
+    padding: 10px;
+  }
+}
