@@ -1,0 +1,61 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+  margin: 20px; /* Apply margin to the wrapper */
+}
+
+.container {
+  /* background-color: yellow; */
+  width: 50%;
+  height: auto; /* Adjusted height to ensure enough space */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.btn_contai {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px; /* Space between buttons and the rest of the content */
+}
+
+.btn {
+  background-color: blue;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin: 5px;
+  width: 15%; /* Adjusted width to make the buttons more compact */;
+}
+
+.copy {
+  width: 100%;
+  padding: 20px;
+  background-color: lightgray; /* Gray background for the copy container */
+  border-left: 10px solid white; /* White border on the right */
+  box-sizing: border-box;
+}
+
+.copy p {
+  margin: 0; /* Remove default margin from paragraph */
+}
